@@ -1,0 +1,62 @@
+[
+  {
+    "name": "BRIMSTONE",
+    "number": "01",
+    "role": "CONTROLLER",
+    "biography": "Joining from the U.S.A., Brimstone's orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and safely make him the unmatched boots-on-the-ground commander.",
+    "released": "Episode 1: Ignition, Act 1",
+    "origin": "United States",
+    "abilities": [
+      {
+        "key": "Q",
+        "name": "INCENDIARY",
+        "description": "EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone."
+      },
+      {
+        "key": "E",
+        "name": "SKY SMOKE",
+        "description": "EQUIP a tactical map. FIRE to set locations where Brimstone's smoke clouds will land. ALT FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area."
+      },
+      {
+        "key": "C",
+        "name": "STIM BEACON",
+        "description": "EQUIP a stim beacon. FIRE to toss the stim beacon in front of Brimstone. Upon landing, the stim beacon will create a field that grants players RapidFire."
+      },
+      {
+        "key": "X",
+        "name": "ORBITAL STRIKE",
+        "description": "EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at the selected location, dealing high damage-over-time to players caught in the selected area."
+      }
+    ]
+  },
+  {
+    "name": "VIPER",
+    "number": "02",
+    "role": "CONTROLLER",
+    "biography": "The American Chemist, Viper deploys an array of poisonous chemical devices to control the battlefield and choke the enemy's vision. If the toxins don't kill her prey, her mindgames surely will.",
+    "released": "Episode 1: Ignition, Act 2",
+    "origin": "United States",
+    "abilities": [
+      {
+        "key": "Q",
+        "name": "POISON CLOUD",
+        "description": "EQUIP a gas emitter. FIRE to throw the emitter that perpetually remains throughout the round. RE-USE the ability to create a toxic gas cloud at the cost of fuel. This ability can be RE-USED more than once and can be picked up to be REDEPLOYED."
+      },
+      {
+        "key": "E",
+        "name": "TOXIC SCREEN",
+        "description": "EQUIP a gas emitter launcher. FIRE to deploy a long line of gas emitters. RE-USE the ability to create a tall wall of toxic gas at the cost of fuel. This ability can be RE-USED more than once."
+      },
+      {
+        "key": "C",
+        "name": "SNAKE BITE",
+        "description": "EQUIP a chemical launcher. FIRE to launch a canister that shatters upon hitting the floor, creating a lingering chemical zone that damages and slows enemies."
+      },
+      {
+        "key": "X",
+        "name": "VIPER'S PIT",
+        "description": "EQUIP a chemical sprayer. FIRE to spray a chemical cloud in all directions around Viper, creating a large cloud that reduces the vision range and maximum health of players inside of it."
+      }
+    ]
+  }
+]
