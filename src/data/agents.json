@@ -1,5 +1,5 @@
-{
-  "01": {
+[
+  {
     "name": "BRIMSTONE",
     "number": "01",
     "role": "CONTROLLER",
@@ -29,7 +29,7 @@
       }
     ]
   },
-  "02": {
+  {
     "name": "VIPER",
     "number": "02",
     "role": "CONTROLLER",
@@ -59,7 +59,7 @@
       }
     ]
   },
-  "03": {
+  {
     "name": "OMEN",
     "number": "03",
     "role": "CONTROLLER",
@@ -89,7 +89,7 @@
       }
     ]
   },
-  "04": {
+  {
     "name": "KILLJOY",
     "number": "04",
     "role": "SENTINEL",
@@ -119,7 +119,7 @@
       }
     ]
   },
-  "05": {
+  {
     "name": "CYPHER",
     "number": "05",
     "role": "SENTINEL",
@@ -149,7 +149,7 @@
       }
     ]
   },
-  "06": {
+  {
     "name": "SOVA",
     "number": "06",
     "role": "INITIATOR",
@@ -179,7 +179,7 @@
       }
     ]
   },
-  "07": {
+  {
     "name": "SAGE",
     "number": "07",
     "role": "SENTINEL",
@@ -209,7 +209,7 @@
       }
     ]
   },
-  "09": {
+  {
     "name": "PHOENIX",
     "number": "09",
     "role": "DUELIST",
@@ -239,7 +239,7 @@
       }
     ]
   },
-  "10": {
+  {
     "name": "JETT",
     "number": "10",
     "role": "DUELIST",
@@ -269,7 +269,7 @@
       }
     ]
   },
-  "11": {
+  {
     "name": "REYNA",
     "number": "11",
     "role": "DUELIST",
@@ -299,7 +299,7 @@
       }
     ]
   },
-  "12": {
+  {
     "name": "RAZE",
     "number": "12",
     "role": "DUELIST",
@@ -329,7 +329,7 @@
       }
     ]
   },
-  "13": {
+  {
     "name": "BREACH",
     "number": "13",
     "role": "INITIATOR",
@@ -359,7 +359,7 @@
       }
     ]
   },
-  "14": {
+  {
     "name": "SKYE",
     "number": "14",
     "role": "INITIATOR",
@@ -389,7 +389,7 @@
       }
     ]
   },
-  "15": {
+  {
     "name": "YORU",
     "number": "15",
     "role": "DUELIST",
@@ -419,7 +419,7 @@
       }
     ]
   },
-  "16": {
+  {
     "name": "ASTRA",
     "number": "16",
     "role": "CONTROLLER",
@@ -449,7 +449,7 @@
       }
     ]
   },
-  "17": {
+  {
     "name": "KAY/O",
     "number": "17",
     "role": "INITIATOR",
@@ -479,7 +479,7 @@
       }
     ]
   },
-  "!8": {
+  {
     "name": "CHAMBER",
     "number": "18",
     "role": "SENTINEL",
@@ -509,7 +509,7 @@
       }
     ]
   },
-  "19": {
+  {
     "name": "NEON",
     "number": "19",
     "role": "DUELIST",
@@ -539,7 +539,7 @@
       }
     ]
   },
-  "20": {
+  {
     "name": "FADE",
     "number": "20",
     "role": "INITIATOR",
@@ -569,7 +569,7 @@
       }
     ]
   },
-  "21": {
+  {
     "name": "HARBOR",
     "number": "21",
     "role": "CONTROLLER",
@@ -599,7 +599,7 @@
       }
     ]
   },
-  "22": {
+  {
     "name": "GEKKO",
     "number": "22",
     "role": "INITIATOR",
@@ -629,7 +629,7 @@
       }
     ]
   },
-  "23": {
+  {
     "name": "DEADLOCK",
     "number": "23",
     "role": "SENTINEL",
@@ -659,7 +659,7 @@
       }
     ]
   },
-  "24": {
+  {
     "name": "ISO",
     "number": "24",
     "role": "DUELIST",
@@ -689,4 +689,4 @@
       }
     ]
   }
-}
+]
