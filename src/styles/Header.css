@@ -1,0 +1,22 @@
+* {
+  user-select: none;
+  color: #e8fafa;
+}
+
+.header {
+  padding-top: 10px;
+  width: 100vw;
+  font-family: "VALORANT", sans-serif;
+  /* border: 2px solid white; */
+  text-align: left;
+}
+
+.header-content {
+  display: inline-block;
+  font-size: 2rem;
+}
+
+.logo {
+  width: 3em;
+  margin-left: 1.5em;
+}

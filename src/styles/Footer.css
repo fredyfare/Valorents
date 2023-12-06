@@ -1,0 +1,25 @@
+* {
+  user-select: none;
+  color: #e8fafa;
+}
+
+.footer {
+  padding: 20px;
+  width: 100vw;
+  font-family: "VALORANT", sans-serif;
+  /* border: 2px solid white; */
+  /* height: 2vh; */
+  /* display: flex;
+  align-items: center; */
+}
+
+/* p {
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+} */
+
+/* .logo {
+  width: 3em;
+  margin-left: 3em;
+} */
