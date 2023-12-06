@@ -1,9 +1,14 @@
 import React from "react";
+import valorantAgents from "../assets/images/valorantAgents.png"
 import "../styles/AgentDetails.css"
 
 function AgentDetails({ agentDetails }) {
   if (!agentDetails) {
-    return null;
+    return(
+      <div className="valorant-agents">
+        <img src={valorantAgents} className="valorant-agents-img" />
+      </div>
+    );
   }
 
   return (

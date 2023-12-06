@@ -7,7 +7,7 @@
 .agentMenu {
   height: 85vh;
   width: 15vw;
-  border: 2px solid grey;
+  border: 2px solid rgba(128, 128, 128, 0);
   overflow-y: auto;
   display: grid;
   grid-template-columns: repeat(1, 1fr);

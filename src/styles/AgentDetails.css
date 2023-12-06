@@ -6,6 +6,30 @@
 .agentDetails {
   height: 85vh;
   width: 85vw;
-  border: 2px solid grey;
+  border: 2px solid rgba(128, 128, 128, 0);
   flex: 2/3;
+}
+
+.valorant-agents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  width: 85vw;
+  border: 2px solid rgba(128, 128, 128, 0);
+}
+
+.valorant-agents-img {
+  height: 90%;
+  position: relative;
+  animation: fadeInImage 2s ease-in-out forwards;
+}
+
+@keyframes fadeInImage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
