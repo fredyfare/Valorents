@@ -1,16 +1,16 @@
 * {
   user-select: none;
+  color: #e8fafa;
 }
 
 .agentList {
-  padding: 8px;
-  height: 90vh;
+  height: 80vh;
   width: 15vw;
-  /* border: 2px solid grey; */
+  /* border: 2px solid grey;  */
   overflow-y: auto;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-gap: 5px;
+  grid-gap: 10px;
 }
 
 .agentList::-webkit-scrollbar {
@@ -21,8 +21,8 @@
   font-family: "VALORANT", sans-serif;
   display: flex;
   align-items: center;
-  background-color: #456362;
-  border: 2px solid #97ced4;
+  /* background-color: #456362;
+  border: 2px solid #97ced4; */
 }
 
 .agentIcon {
