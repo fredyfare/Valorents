@@ -1,0 +1,39 @@
+* {
+  user-select: none;
+}
+
+.agentList {
+  padding: 8px;
+  height: 90vh;
+  width: 15vw;
+  background-color: white;
+  border: 2px solid grey;
+  overflow-y: auto;
+}
+
+.agentList::-webkit-scrollbar {
+  display: none;
+}
+
+.agentSelector {
+  font-family: "VALORANT", sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.agentIcon {
+  width: 3em;
+  height: 3em;
+  margin-right: 0.5em;
+  background-color: #456362;
+  border: 2px solid #8ccac3;
+}
+
+span {
+  margin-right: 0.5em;
+}
+
+h2 {
+  font-size: 1em;
+  display: inline-block;
+}

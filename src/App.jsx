@@ -1,9 +1,13 @@
+import AgentMenu from "./components/AgentMenu";
+import Header from "./components/Header";
 import agents from "./data/agents.json";
 
 function App() {
   return (
     <div>
-      {agents.map((agent) => (
+      {/* <Header /> */}
+      <AgentMenu />
+      {/* {agents.map((agent) => (
         <div key={agent.number}>
           <h1>{agent.number}</h1>
           <h2>{agent.name}</h2>
@@ -21,7 +25,7 @@ function App() {
             ))}
           </ul>
         </div>
-      ))}
+      ))} */}
     </div>
   );
 }
