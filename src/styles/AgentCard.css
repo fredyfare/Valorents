@@ -2,8 +2,12 @@
   font-family: "VALORANT", sans-serif;
   display: flex;
   align-items: center;
-  /* background-color: #456362;
-  border: 2px solid #97ced4; */
+  transition: transform 0.5s ease;
+}
+
+.agentSelector:hover {
+  transform: translateX(10px);
+  border-left: 2px solid white;
 }
 
 .agentIcon {
@@ -26,4 +30,17 @@ h2 {
   font-size: 1em;
   display: inline-block;
   padding-right: 5px;
+}
+
+.agentIcon.selected {
+  border: 2px solid #e8e5d2;
+}
+
+.agentSelector.selected {
+  transform: translateX(10px);
+  border-left: 2px solid white;
+}
+
+.selected {
+  color: #ff4655;
 }

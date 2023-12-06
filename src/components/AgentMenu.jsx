@@ -34,6 +34,7 @@ function AgentMenu() {
             agentName={agent.name}
             agentNumber={agent.number}
             onClick={() => handleClick(agent.name)}
+            isSelected={currAgent === agent.name}
           />
         ))}
       </div>
