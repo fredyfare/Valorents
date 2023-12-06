@@ -1,0 +1,11 @@
+* {
+  user-select: none;
+  color: #e8fafa;
+}
+
+.agentDetails {
+  height: 85vh;
+  width: 85vw;
+  border: 2px solid grey;
+  flex: 2/3;
+}

@@ -1,21 +1,27 @@
 * {
   user-select: none;
   color: #e8fafa;
+  box-sizing: border-box;
 }
 
-.agentList {
-  height: 80vh;
+.agentMenu {
+  height: 85vh;
   width: 15vw;
-  /* border: 2px solid grey;  */
+  border: 2px solid grey;
   overflow-y: auto;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 10px;
   padding: 20px;
+  flex: 1/3;
 }
 
-.agentList::-webkit-scrollbar {
+.agentMenu::-webkit-scrollbar {
   display: none;
 }
 
-
+.agentContainer {
+  display: flex;
+  width: 100vw;
+  height: 85vh;
+}

@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import AgentCard from "./AgentCard";
+import AgentDetails from "./AgentDetails";
 import agents from "../data/agents.json";
 import brimstone from "../assets/icons/brimstone.png";
 import viper from "../assets/icons/viper.png";
@@ -24,9 +26,11 @@ import gekko from "../assets/icons/gekko.png";
 import deadlock from "../assets/icons/deadlock.png";
 import iso from "../assets/icons/iso.png";
 import "../styles/AgentMenu.css";
-import AgentCard from "./AgentCard";
 
 function AgentMenu() {
+  const [currAgent, setCurrAgent] = useState("");
+  const [agentDetails, setAgentDetails] = useState(null);
+
   const agentIcons = {
     brimstone,
     viper,
@@ -53,37 +57,34 @@ function AgentMenu() {
     iso,
   };
 
+  const handleClick = (agentName) => {
+    setCurrAgent(agentName);
+  };
+
+  useEffect(() => {
+    const selectedAgent = agents.find((agent) => agent.name === currAgent);
+    setAgentDetails(selectedAgent);
+    console.log(selectedAgent);
+  }, [currAgent]);
+
   return (
-    <div className="agentList">
-      {agents.map((agent) => (
-        // <div className="agentSelector" key={agent.number}>
-        //   <div className="agentIconContainer">
-        //     <span>
-        //       <img
-        //         className="agentIcon"
-        //         src={
-        //           agent.name === "KAY/O"
-        //             ? agentIcons["kayo"]
-        //             : agentIcons[agent.name.toLowerCase()]
-        //         }
-        //         alt={`${agent.name} icon`}
-        //       />
-        //     </span>
-        //   </div>
-        //   <span>{agent.number}</span>
-        //   <h2>{agent.name}</h2>
-        // </div>
-        <AgentCard
-          key={agent.number}
-          icon={
-            agent.name === "KAY/O"
-              ? agentIcons["kayo"]
-              : agentIcons[agent.name.toLowerCase()]
-          }
-          agentName={agent.name}
-          agentNumber={agent.number}
-        />
-      ))}
+    <div className="agentContainer">
+      <div className="agentMenu">
+        {agents.map((agent) => (
+          <AgentCard
+            key={agent.number}
+            icon={
+              agent.name === "KAY/O"
+                ? agentIcons["kayo"]
+                : agentIcons[agent.name.toLowerCase()]
+            }
+            agentName={agent.name}
+            agentNumber={agent.number}
+            onClick={() => handleClick(agent.name)}
+          />
+        ))}
+      </div>
+      <AgentDetails agentDetails={agentDetails} />
     </div>
   );
 }

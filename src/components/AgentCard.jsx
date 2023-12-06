@@ -1,9 +1,9 @@
 import React from "react";
-import "../styles/AgentCard.css"
+import "../styles/AgentCard.css";
 
-function AgentCard({ key, icon, agentName, agentNumber }) {
+function AgentCard({ icon, agentName, agentNumber, onClick }) {
   return (
-    <div className="agentSelector" key={key}>
+    <div className="agentSelector" onClick={onClick}>
       <div className="agentIconContainer">
         <span>
           <img className="agentIcon" src={icon} alt={`${agentName} icon`} />
