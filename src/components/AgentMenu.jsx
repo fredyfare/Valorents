@@ -1,6 +1,5 @@
 import React from "react";
 import agents from "../data/agents.json";
-import "../styles/AgentMenu.css";
 import brimstone from "../assets/icons/brimstone.png";
 import viper from "../assets/icons/viper.png";
 import omen from "../assets/icons/omen.png";
@@ -24,6 +23,7 @@ import harbor from "../assets/icons/harbor.png";
 import gekko from "../assets/icons/gekko.png";
 import deadlock from "../assets/icons/deadlock.png";
 import iso from "../assets/icons/iso.png";
+import "../styles/AgentMenu.css";
 
 function AgentMenu() {
   const agentIcons = {
@@ -56,16 +56,19 @@ function AgentMenu() {
     <div className="agentList">
       {agents.map((agent) => (
         <div className="agentSelector" key={agent.number}>
-          <span>
-            <img
-              className="agentIcon"
-              src={
-                agent.name === "KAY/O"
-                  ? agentIcons["kayo"]
-                  : agentIcons[agent.name.toLowerCase()]
-              }
-            />
-          </span>
+          <div className="agentIconContainer">
+            <span>
+              <img
+                className="agentIcon"
+                src={
+                  agent.name === "KAY/O"
+                    ? agentIcons["kayo"]
+                    : agentIcons[agent.name.toLowerCase()]
+                }
+                alt={`${agent.name} icon`}
+              />
+            </span>
+          </div>
           <span>{agent.number}</span>
           <h2>{agent.name}</h2>
         </div>
