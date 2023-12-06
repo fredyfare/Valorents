@@ -11,7 +11,7 @@ function Footer() {
         <a href="https://playvalorant.com/en-us/" target="_blank">
           Valorant
         </a>{" "}
-        by Riot Games. This page was created solely for practicing React and is
+        by Riot Games. This page was created for practicing React and is
         based on{" "}
         <a href="https://playvalorant.com/en-us/agents/" target="_blank">
           Valorant agents

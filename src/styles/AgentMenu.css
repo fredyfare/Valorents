@@ -18,32 +18,4 @@
   display: none;
 }
 
-.agentSelector {
-  font-family: "VALORANT", sans-serif;
-  display: flex;
-  align-items: center;
-  /* background-color: #456362;
-  border: 2px solid #97ced4; */
-}
 
-.agentIcon {
-  width: 3em;
-  margin-right: 0.5em;
-  background-color: #456362;
-  border: 2px solid #8ccac3;
-}
-
-.agentIconContainer {
-  padding-top: 5px;
-  padding-left: 5px;
-}
-
-span {
-  margin-right: 0.5em;
-}
-
-h2 {
-  font-size: 1em;
-  display: inline-block;
-  padding-right: 5px;
-}

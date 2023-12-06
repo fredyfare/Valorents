@@ -24,6 +24,7 @@ import gekko from "../assets/icons/gekko.png";
 import deadlock from "../assets/icons/deadlock.png";
 import iso from "../assets/icons/iso.png";
 import "../styles/AgentMenu.css";
+import AgentCard from "./AgentCard";
 
 function AgentMenu() {
   const agentIcons = {
@@ -55,23 +56,33 @@ function AgentMenu() {
   return (
     <div className="agentList">
       {agents.map((agent) => (
-        <div className="agentSelector" key={agent.number}>
-          <div className="agentIconContainer">
-            <span>
-              <img
-                className="agentIcon"
-                src={
-                  agent.name === "KAY/O"
-                    ? agentIcons["kayo"]
-                    : agentIcons[agent.name.toLowerCase()]
-                }
-                alt={`${agent.name} icon`}
-              />
-            </span>
-          </div>
-          <span>{agent.number}</span>
-          <h2>{agent.name}</h2>
-        </div>
+        // <div className="agentSelector" key={agent.number}>
+        //   <div className="agentIconContainer">
+        //     <span>
+        //       <img
+        //         className="agentIcon"
+        //         src={
+        //           agent.name === "KAY/O"
+        //             ? agentIcons["kayo"]
+        //             : agentIcons[agent.name.toLowerCase()]
+        //         }
+        //         alt={`${agent.name} icon`}
+        //       />
+        //     </span>
+        //   </div>
+        //   <span>{agent.number}</span>
+        //   <h2>{agent.name}</h2>
+        // </div>
+        <AgentCard
+          key={agent.number}
+          icon={
+            agent.name === "KAY/O"
+              ? agentIcons["kayo"]
+              : agentIcons[agent.name.toLowerCase()]
+          }
+          agentName={agent.name}
+          agentNumber={agent.number}
+        />
       ))}
     </div>
   );
