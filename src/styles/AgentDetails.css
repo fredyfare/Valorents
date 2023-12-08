@@ -35,6 +35,13 @@
   border: 2px solid rgba(128, 128, 128, 0);
   border-left: 2px solid white;
   font-family: DINNextW1G, arial, georgia, sans-serif;
+  display: flex;
+  /* animation: fadeInImage 2s ease-in-out forwards; */
+
+}
+
+.left-part {
+  width: 70%;
 }
 
 .main-info {
@@ -43,7 +50,7 @@
 
 .biography {
   border: 2px solid rgba(128, 128, 128, 0);
-  width: 25%;
+  width: 50%;
 }
 
 .biography > p:nth-child(3) {
@@ -53,23 +60,68 @@
 
 .data {
   border: 2px solid rgba(128, 128, 128, 0);
-  padding-left: 20px;
-  width: 25%;
+  padding-left: 10px;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  /* gap: 20px; */
 }
 
-.data > p {
+.data-left {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.data-left > p {
+  border: 2px solid rgba(128, 128, 128, 0);
+  width: 100%;
+}
+
+.data-left > p:nth-child(1) {
+  opacity: 0.7;
+  font-weight: bold;
+}
+
+.data-left > p:nth-child(2) {
+  display: flex;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.data-left > p:nth-child(3) {
+  opacity: 0.7;
+  font-weight: bold;
+}
+
+.data-left > p:nth-child(4) {
+  font-weight: bold;
+}
+
+.data-right {
+  width: 55%;
+  border: 2px solid rgba(128, 128, 128, 0);
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.data-right > p {
+  /* opacity: 0.9; */
+  padding-right: 20px;
+  text-wrap: pretty;
+}
+
+.role-type {
+  color: #ebeeb2;
+}
+
+.role-icon {
+  width: 17px;
+  height: 17px;
   position: relative;
-  top: 30px;
-}
-
-.data > p:nth-child(1) {
-  opacity: 0.7;
-  font-weight: bold;
-}
-
-.data > p:nth-child(5) {
-  opacity: 0.7;
-  font-weight: bold;
 }
 
 .skills {
@@ -99,21 +151,41 @@
   height: 50px;
 }
 
-.agent-image {
-  border: 2px solid rgba(128, 128, 128, 0);
-}
-
 h1 {
   color: #ebeeb2;
 }
 
 .skill-info-container {
   border: 2px solid rgba(128, 128, 128, 0);
-  width: 35%;
+  width: 70%;
   position: relative;
   bottom: 10px;
 }
 
 .skill-name {
   color: #ebeeb2;
+}
+
+.right-part {
+  display: flex;
+  width: 30%;
+  border: 2px solid rgba(128, 128, 128, );
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.agent-image-container {
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgba(128, 128, 128, );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.agent-image {
+  width: 100%;
+  height: 100%;
+  animation: fadeInImage 2s ease-in-out forwards;
 }
