@@ -7,7 +7,8 @@
 
 .agentSelector:hover {
   transform: translateX(10px);
-  border-left: 2px solid white;
+  border-left: 2px solid #61676b;
+  cursor: pointer;
 }
 
 .agentIcon {
@@ -38,7 +39,7 @@ h2 {
 
 .agentSelector.selected {
   transform: translateX(10px);
-  border-left: 2px solid white;
+  border-left: 2px solid #e8e5d2;
 }
 
 .selected {
