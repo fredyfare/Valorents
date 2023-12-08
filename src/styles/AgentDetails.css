@@ -90,6 +90,7 @@
 .skill-icon-container {
   border: 2px solid #bfc8d7;
   padding: 10px;
+  cursor: pointer;
 }
 
 .skill-icon {
@@ -103,5 +104,16 @@
 }
 
 h1 {
+  color: #ebeeb2;
+}
+
+.skill-info-container {
+  border: 2px solid rgba(128, 128, 128, 0);
+  width: 35%;
+  position: relative;
+  bottom: 10px;
+}
+
+.skill-name {
   color: #ebeeb2;
 }
