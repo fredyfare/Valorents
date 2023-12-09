@@ -10,7 +10,7 @@ function AgentDetails({ agentDetails }) {
   };
 
   useEffect(() => {
-    setCurrAbility("Q")
+    setCurrAbility("Q");
   }, [agentDetails]);
 
   if (!agentDetails) {
@@ -84,7 +84,11 @@ function AgentDetails({ agentDetails }) {
           <div className="skills-icons">
             {agentDetails.abilities.map((ability, index) => (
               <div
-                className="skill-icon-container"
+                className={
+                  ability.key === currAbility
+                    ? "skill-icon-container skill-selected"
+                    : "skill-icon-container"
+                }
                 key={index}
                 onClick={() => handleClick(ability.key)}
               >
