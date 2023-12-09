@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import valorantAgents from "../assets/images/valorantAgents.png";
 import "../styles/AgentDetails.css";
 
@@ -8,6 +8,10 @@ function AgentDetails({ agentDetails }) {
   const handleClick = (abilityKey) => {
     setCurrAbility(abilityKey);
   };
+
+  useEffect(() => {
+    setCurrAbility("Q")
+  }, [agentDetails]);
 
   if (!agentDetails) {
     return (
@@ -86,7 +90,17 @@ function AgentDetails({ agentDetails }) {
               >
                 <img
                   className="skill-icon"
-                  src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt29aa6cc80f1caa7b/5eaf8607af7e315106b47daa/TX_Brimstone_Q.png"
+                  src={
+                    agentDetails.name === "KAY/O"
+                      ? new URL(
+                          `../assets/icons/skills/KAYO_${ability.key}.png`,
+                          import.meta.url
+                        ).href
+                      : new URL(
+                          `../assets/icons/skills/${agentDetails.name}_${ability.key}.png`,
+                          import.meta.url
+                        ).href
+                  }
                 />
               </div>
             ))}
