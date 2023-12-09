@@ -4,13 +4,22 @@ import "../styles/AgentDetails.css";
 
 function AgentDetails({ agentDetails }) {
   const [currAbility, setCurrAbility] = useState(null);
+  const [animationType, setAnimatioType] = useState("");
 
   const handleClick = (abilityKey) => {
     setCurrAbility(abilityKey);
+    setAnimatioType("");
   };
 
   useEffect(() => {
     setCurrAbility("Q");
+    setAnimatioType("fadeInImage 2s ease-in-out forwards");
+
+    const timer = setTimeout(() => {
+      setAnimatioType("");
+    }, 2000);
+
+    return () => clearTimeout(timer);
   }, [agentDetails]);
 
   if (!agentDetails) {
@@ -142,6 +151,7 @@ function AgentDetails({ agentDetails }) {
         <div className="agent-image-container">
           <img
             className="agent-image"
+            style={{ animation: animationType }}
             src={
               agentDetails.name === "KAY/O"
                 ? new URL(`../assets/images/agents/kayo.png`, import.meta.url)
