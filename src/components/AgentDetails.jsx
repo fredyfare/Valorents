@@ -5,6 +5,7 @@ import "../styles/AgentDetails.css";
 function AgentDetails({ agentDetails }) {
   const [currAbility, setCurrAbility] = useState("Q");
   const [animationType, setAnimationType] = useState("");
+  const [leftPartAnimation, setLeftPartAnimation] = useState("");
 
   const handleClick = (abilityKey) => {
     setCurrAbility(abilityKey);
@@ -13,9 +14,11 @@ function AgentDetails({ agentDetails }) {
   useEffect(() => {
     setCurrAbility("Q");
     setAnimationType("fadeInImage 2s ease-in-out forwards");
+    setLeftPartAnimation("pullUp 1s ease-in-out forwards");
 
     const timer = setTimeout(() => {
       setAnimationType("");
+      setLeftPartAnimation("");
     }, 2000);
 
     return () => clearTimeout(timer);
@@ -31,7 +34,7 @@ function AgentDetails({ agentDetails }) {
 
   return (
     <div className="agentDetails">
-      <div className="left-part">
+      <div className="left-part" style={{ animation: leftPartAnimation }}>
         <div className="main-info">
           <div className="biography">
             <h1>{agentDetails.name}</h1>
@@ -118,47 +121,49 @@ function AgentDetails({ agentDetails }) {
             ))}
           </div>
           <div className="skill-info-container">
-            {(!currAbility
-              ? agentDetails.abilities.find((ability) => ability.key === "Q")
-              : agentDetails.abilities.find(
-                  (ability) => ability.key === currAbility
-                )) &&
-              agentDetails.abilities
-                .filter((ability) =>
-                  !currAbility
-                    ? ability.key === "Q"
-                    : ability.key === currAbility
-                )
-                .map((ability, index) => (
-                  <div className="skill-info" key={index}>
-                    <h2 className="skill-name">
-                      {ability.key} - {ability.name}
-                    </h2>
-                    <br />
-                    <br />
-                    <p>{ability.description}</p>
-                  </div>
-                ))}
+            <div className="skill-info-left">
+              <video
+                className="skill-video"
+                src={
+                  agentDetails.name === "KAY/O"
+                    ? new URL(
+                        `../assets/videos/skills/KAYO_${currAbility}.mp4`,
+                        import.meta.url
+                      ).href
+                    : new URL(
+                        `../assets/videos/skills/${agentDetails.name}_${currAbility}.mp4`,
+                        import.meta.url
+                      ).href
+                }
+                autoPlay
+                loop
+                muted
+              />
+            </div>
+            <div className="skill-info-right">
+              {(!currAbility
+                ? agentDetails.abilities.find((ability) => ability.key === "Q")
+                : agentDetails.abilities.find(
+                    (ability) => ability.key === currAbility
+                  )) &&
+                agentDetails.abilities
+                  .filter((ability) =>
+                    !currAbility
+                      ? ability.key === "Q"
+                      : ability.key === currAbility
+                  )
+                  .map((ability, index) => (
+                    <div className="skill-info" key={index}>
+                      <h2 className="skill-name">
+                        {ability.key} - {ability.name}
+                      </h2>
+                      <br />
+                      <br />
+                      <p>{ability.description}</p>
+                    </div>
+                  ))}
+            </div>
           </div>
-        </div>
-        <div className="skill-video-container">
-          <video
-            className="skill-video"
-            src={
-              agentDetails.name === "KAY/O"
-                ? new URL(
-                    `../assets/videos/skills/KAYO_${currAbility}.mp4`,
-                    import.meta.url
-                  ).href
-                : new URL(
-                    `../assets/videos/skills/${agentDetails.name}_${currAbility}.mp4`,
-                    import.meta.url
-                  ).href
-            }
-            autoPlay
-            loop
-            muted
-          />
         </div>
       </div>
       <div className="right-part">
