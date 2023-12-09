@@ -4,19 +4,18 @@ import "../styles/AgentDetails.css";
 
 function AgentDetails({ agentDetails }) {
   const [currAbility, setCurrAbility] = useState(null);
-  const [animationType, setAnimatioType] = useState("");
+  const [animationType, setAnimationType] = useState("");
 
   const handleClick = (abilityKey) => {
     setCurrAbility(abilityKey);
-    setAnimatioType("");
   };
 
   useEffect(() => {
     setCurrAbility("Q");
-    setAnimatioType("fadeInImage 2s ease-in-out forwards");
+    setAnimationType("fadeInImage 2s ease-in-out forwards");
 
     const timer = setTimeout(() => {
-      setAnimatioType("");
+      setAnimationType("");
     }, 2000);
 
     return () => clearTimeout(timer);
