@@ -57,6 +57,15 @@ npm run dev
       :heavy_multiplication_x:
     </td>
   </tr>
+    </tr>
+    <tr>
+    <td align="center">
+      Abilities' audio
+    </td>
+    <td align="center">
+      :heavy_multiplication_x:
+    </td>
+  </tr>
 </table>
 
 
