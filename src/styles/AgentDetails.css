@@ -32,7 +32,7 @@
   width: 85vw;
   padding-left: 30px;
   margin-left: 20px;
-  border: 2px solid rgba(128, 128, 128, 1);
+  border: 2px solid rgba(128, 128, 128, 0);
   border-left: 2px solid white;
   font-family: DINNextW1G, arial, georgia, sans-serif;
   display: flex;
