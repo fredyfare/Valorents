@@ -3,7 +3,7 @@ import valorantAgents from "../assets/images/valorantAgents.png";
 import "../styles/AgentDetails.css";
 
 function AgentDetails({ agentDetails }) {
-  const [currAbility, setCurrAbility] = useState(null);
+  const [currAbility, setCurrAbility] = useState("Q");
   const [animationType, setAnimationType] = useState("");
 
   const handleClick = (abilityKey) => {
@@ -141,9 +141,24 @@ function AgentDetails({ agentDetails }) {
                 ))}
           </div>
         </div>
-        <div className="skill-video">
-          <h1>{agentDetails.name}</h1>
-          <p>{agentDetails.biography}</p>
+        <div className="skill-video-container">
+          <video
+            className="skill-video"
+            src={
+              agentDetails.name === "KAY/O"
+                ? new URL(
+                    `../assets/videos/skills/KAYO_${currAbility}.mp4`,
+                    import.meta.url
+                  ).href
+                : new URL(
+                    `../assets/videos/skills/${agentDetails.name}_${currAbility}.mp4`,
+                    import.meta.url
+                  ).href
+            }
+            autoPlay
+            loop
+            muted
+          />
         </div>
       </div>
       <div className="right-part">
