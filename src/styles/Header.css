@@ -4,21 +4,23 @@
 }
 
 .header {
-  padding-top: 10px;
+  border: 2px solid rgba(128, 128, 128, 1);
   width: 100vw;
+  height: 5%;
   font-family: "VALORANT", sans-serif;
-  border: 2px solid rgba(128, 128, 128, 0);
-  text-align: left;
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  padding-left: 15px;
 }
 
 .header-content {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.4em;
   position: relative;
   right: 10px;
 }
 
 .logo {
-  width: 3em;
-  margin-left: 1.5em;
+  width: 1.5em;
 }
