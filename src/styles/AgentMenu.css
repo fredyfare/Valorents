@@ -4,23 +4,24 @@
   box-sizing: border-box;
 }
 
+.agentContainer {
+  border: 2px solid rgba(128, 128, 128, 0);
+  display: flex;
+  width: 100vw;
+  height: 90%;
+}
+
 .agentMenu {
-  height: 85vh;
-  width: 15vw;
+  height: 100%;
+  width: 15%;
   border: 2px solid rgba(128, 128, 128, 0);
   overflow-y: auto;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 10px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .agentMenu::-webkit-scrollbar {
   display: none;
-}
-
-.agentContainer {
-  display: flex;
-  width: 100vw;
-  height: 85vh;
 }
