@@ -13,7 +13,7 @@
 
 .agentMenu {
   height: 100%;
-  width: 15%;
+  width: 20%;
   border: 2px solid rgba(128, 128, 128, 0);
   overflow-y: auto;
   display: grid;
