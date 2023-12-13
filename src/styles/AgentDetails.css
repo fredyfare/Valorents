@@ -48,7 +48,7 @@
   display: flex;
   flex-direction: column;
   width: 70%;
-  margin-left: 10px;
+  margin-left: 20px;
   /* overflow: hidden; */
   /* animation: pullUp 2s ease-in-out forwards; */
 }
