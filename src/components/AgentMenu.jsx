@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import AgentCard from "./AgentCard";
 import AgentDetails from "./AgentDetails";
 import agents from "../data/agents.json";
+import { AppContext } from "../App";
 import "../styles/AgentMenu.css";
 
 function AgentMenu() {
+  const { agentDetails, setAgentDetails } = useContext(AppContext);
   const [currAgent, setCurrAgent] = useState("");
-  const [agentDetails, setAgentDetails] = useState(null);
+  // const [agentDetails, setAgentDetails] = useState(null);
 
   const handleClick = (agentName) => {
     setCurrAgent(agentName);

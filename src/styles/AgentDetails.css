@@ -5,16 +5,18 @@
 
 .valorant-agents {
   display: flex;
-  top: 20px;
-  height: 85vh;
-  width: 85vw;
+  /* margin-left: 20px; */
+  height: 100%;
+  width: 100%;
   border: 2px solid rgba(128, 128, 128, 0);
-  align-items: center;
+  /* border-left: 2px solid white; */
   justify-content: center;
+  align-items: center;
 }
 
 .valorant-agents-img {
-  height: 90%;
+  /* height: 90%; */
+  width: 50%;
   animation: fadeInImage 2s ease-in-out forwards;
 }
 
@@ -29,11 +31,11 @@
 
 .agentDetails {
   height: 100%;
-  width: 85vw;
-  padding-left: 30px;
-  margin-left: 20px;
+  width: 100%;
+  /* padding-left: 30px; */
+  /* margin-left: 20px; */
   border: 2px solid rgba(128, 128, 128, 0);
-  border-left: 2px solid white;
+  /* border-left: 2px solid white; */
   font-family: DINNextW1G, arial, georgia, sans-serif;
   display: flex;
   overflow: hidden;
@@ -46,13 +48,14 @@
   display: flex;
   flex-direction: column;
   width: 70%;
+  margin-left: 20px;
   /* overflow: hidden; */
   /* animation: pullUp 2s ease-in-out forwards; */
 }
 
 @keyframes pullUp {
   from {
-    transform: translateX(100%);
+    transform: translateX(143%);
   }
   to {
     transform: translateX(0%);
