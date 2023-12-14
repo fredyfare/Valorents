@@ -11,7 +11,7 @@
   display: flex;
   align-items: flex-end;
   /* padding-top: 15px; */
-  padding-left: 15px;
+  /* padding-left: 15px; */
 }
 
 .header-content {
@@ -23,9 +23,51 @@
 
 .logo-container {
   /* border: 2px solid rgba(128, 128, 128, 1); */
+  width: 17%;
   cursor: pointer;
+  padding-left: 15px;
 }
 
 .logo {
   width: 1.5em;
+}
+
+.section-menu {
+  /* border: 2px solid rgba(128, 128, 128, 1); */
+  width: 83%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.agent-section {
+  /* border: 2px solid rgba(128, 128, 128, 1); */
+  font-size: 1.4em;
+  transition: transform 0.5s ease;
+  display: flex;
+  align-items: center;
+}
+
+.agent-section:hover > p {
+  cursor: pointer;
+  color: #ff4655;
+}
+
+.agent-section.selected > p {
+  color: #ff4655;
+}
+
+.collection-section {
+  /* border: 2px solid rgba(128, 128, 128, 1); */
+  margin-left: 20px;
+  font-size: 1.4em;
+}
+
+.collection-section:hover > p {
+  cursor: pointer;
+  color: #ff4655;
+}
+
+.collection-section.selected > p {
+  color: #ff4655;
 }
