@@ -1,0 +1,87 @@
+[
+  {
+    "SIDEARMS": [
+      {
+        "name": "CLASSIC",
+        "credits": "0",
+        "data": [
+          {
+            "primaryFire": "Semi",
+            "wallbang": "Low"
+          },
+          {
+            "fireRate": "6.75",
+            "runSpeed": "5.73",
+            "equipSpeed": "0.75",
+            "firstShotSpread": "0.4",
+            "reloadSpeed": "1.75",
+            "magazine": "12"
+          },
+          {
+            "damage": [
+              {
+                "shortDistance": "0-30",
+                "head": "78",
+                "body": "26",
+                "legs": "22"
+              },
+              {
+                "midDistance": "30-50",
+                "head": "66",
+                "body": "22",
+                "legs": "18"
+              }
+            ]
+          },
+          {
+            "altFire": [
+              "SHOTGUN",
+              "Pellet Count: 3",
+              "Fire Rate: 2.22 bursts/sec"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "SHORTY",
+        "credits": "300",
+        "data": [
+          {
+            "primaryFire": "Semi",
+            "wallbang": "Low"
+          },
+          {
+            "fireRate": "3.33",
+            "runSpeed": "5.4",
+            "equipSpeed": "0.75",
+            "firstShotSpread": "4",
+            "reloadSpeed": "1.75",
+            "magazine": "2"
+          },
+          {
+            "damage": [
+              {
+                "shortDistance": "0-7",
+                "head": "22",
+                "body": "11",
+                "legs": "9"
+              },
+              {
+                "midDistance": "7-15",
+                "head": "12",
+                "body": "6",
+                "legs": "5"
+              },
+              {
+                "largeDistance": "15-50",
+                "head": "6",
+                "body": "3",
+                "legs": "2"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -21,7 +21,7 @@ function App() {
           value={{ agentDetails, setAgentDetails, currSection, setCurrSection }}
         >
           <Header />
-          {currSection === "AGENTS" ? <AgentMenu /> : <WeaponMenu />}
+          {currSection === "COLLECTION" ? <WeaponMenu /> : <AgentMenu />}
 
           <Footer />
         </AppContext.Provider>
